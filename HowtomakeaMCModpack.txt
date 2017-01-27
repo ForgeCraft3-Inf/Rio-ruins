@@ -1,4 +1,4 @@
-﻿How to create a new Platform Modpack
+﻿How to create a new Minecraft Modpack
 ________________
 Here is a quick guide on how to create a modpack. This guide is for packs that do not use Technicsolder.
 For more detailed info on how to create a Minecraft modpack, check here: How to make a Minecraft mod pack
