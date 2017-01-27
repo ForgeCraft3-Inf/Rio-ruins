@@ -1,2 +1,2 @@
 # Rio-ruins
-MC ruins mods combined
+Ruins are everywhere in this mod. 
