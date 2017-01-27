@@ -1,0 +1,82 @@
+﻿How to create a new Platform Modpack
+________________
+Here is a quick guide on how to create a modpack. This guide is for packs that do not use Technicsolder.
+For more detailed info on how to create a Minecraft modpack, check here: How to make a Minecraft mod pack
+________________
+
+
+1.) Login/Register on the Platform
+2.) Click on your username to open a dropdown menu. Now select "Create a Modpack"
+3.) Now fill out the required information. Remember, Technic does not host any files directly. Make sure you have a stable place to host your files before creating your modpack! 
+* Give your modpack a name, like testing-pack (if a modpack already exists with this name, give it a unique name).
+* Choose the Minecraft version for your pack (so it can install Minecraft).
+* Make it a hidden pack since this is for testing and learning.
+* Give it a short description like: "This is a testing pack".
+* Read the submission guidelines and afterwards check the box if you agree.
+
+
+4.) That's it. Now you have a brand new empty modpack! It's time to add content! Check out this article on how to Administering a Modpack
+
+
+Overview
+This guide will feature three main parts to get you from start to finish. You will create your modpack, host it somewhere online, and then you will plug it into Technic Platform.
+About
+Minecraft has been around for a few years now and a lot of systems have grown up around the game. There are many different ways to make modpacks and each one has its own benefits. Some are really good for a single player experience. Some offer creative minds a great way to publish their work to a large audience. We find Technic to be an amazing tool that provides these capabilities to anyone for free. Not only can you make a modpack that takes all of the hard work out of the equation for all of the other people who might want to play with you, it also makes updating a far simpler process than it ever was before. You have access to thousands of creative minds, or just the one that you need. Technique is the platform we recommend for hosting a custom modpack for your server needs.
+Anyone can make a Technic modpack with a little time, effort, and research. By the end of this tutorial, you will have a Technic modpack with at least one mod. If you wish to create a pack with more custom stuff, you will need to do some more research or apply what you learn here.
+Create your Pack with your Desired Mods
+This part will be simple. It just has a lot of steps. First, you’re going to be setting up the basic folder structure and putting Forge in its place. The second part will focus on getting our mods, generating the necessary files, and plugging them in place to finish the pack. The last step will archive everything into a Zip file.
+One important thing to note before going ahead for anyone who recognizes the file structure of the Minecraft client, modpacks after they have been installed, or servers, Technic modpacks are structured slightly differently. So go ahead keeping that in mind in case anything seems out of place.
+Set Up the Folders
+1. Find a place to work on your computer, like your desktop. Create a new folder and call it whatever you want. Go into that folder.
+2. Make a few more folders inside the one you just made: bin, mods, config.
+3. Decide what version of Minecraft you want to make your pack for, and download Minecraft Forge Universal.
+4. Move Minecraft Forge Universal from wherever you downloaded it to into the bin folder that you just created. Rename it to modpack.jar.
+Download the Mods
+1. Choose a mod to download. In this case, we will install a popular mod, NotEnoughItems, as an example. It has the added benefit of being easy to tell that it was installed properly. You will also need CodeChickenCore for this to work.
+2. Copy your mods (NotEnoughItems and CodeChickenCore) to your mods folder in your new modpack.
+3. Install the mod(s) to a clean client (client that doesn't have any other mods installed). You can follow this guide on installing client mods if you don't know how.
+4. Make sure to leave your client folder open (where you installed the mods) so you can keep track of any files that might change.
+5. Run your client once to let the config files generate. Some mods also create other files that might also need to be added to your modpack. For this particular mod, if you press the “O” button while in your inventory, you will see a special interface. This will give you gratification that you installed it properly.
+6. Copy all of the config files from the config folder of your client (and whatever else was generated) to your modpack into the config folder (or other appropriate place).
+Archive the Contents
+This is one of the most important parts. We need to take all of the files and turn them into a single archive file. This will allow us to upload it as one file, and later, Technique can download it as one file. It has the added benefit of being compressed. That means that the file size is made smaller than the original files by finding repeating patterns. So uploading and downloading will also be faster.
+1. Make sure you have some form of archiving tool. Examples include: Winzip, Winrar, 7-Zip, (tar/gzip/bzip2 built-in to Linux/Mac). For the purposes of this guide, we will assume that if you are using Linux/Mac, you know how to zip/unzip and that if you are using Windows, we will use 7-Zip because it's free and powerful.
+2. Download and install 7-Zip according to their directions.
+3. Go to the root directory of your modpack (the folder with bin, mods, and config folders).
+4. Select everything in the folder by pressing CTRL + A. Right click on one of the folders to bring up a context menu. Hover over 7-Zip's menu and compress into an archive. The options with "..." allow you to use more advanced features (including giving the archive a name). Otherwise, you can rename it after it makes the zip file. Make sure you create a ZIP file and not a .7z, .rar, .tar, .tar.gz, or any other archive format. Don't use complex compression or change block sizes. Use the default settings or Technique might not be able to unzip it later. Not every program is written to be compatible with different compression formats.
+At this point, your modpack is complete. It wasn't too hard to set up, it just had a lot of different steps. Now, you have to host it somewhere and plug it into the Technic platform.
+Host Your Pack's Zip File
+Hosting is a requirement for Technic Platform. Their software acts as a proxy service that bounces your launcher from their services to the hosting service you have chosen to use so that it can download the modpack you create. When it does download it, the software then un-packages everything and runs it. The Technic Platform does not offer hosting as this would be incredibly expensive for them to do.
+There are a lot of different ways to do this and many different hosting solutions. Many of them are extremely complicated or cost money. This guide will use a simple and free service called Dropbox. You will need to have an account to use this, so sign up now if you don't have one. If you don't want to use Dropbox, you will need to research other tools like Mediafire, Mega, OneDrive, etc. The most important thing however is that it must have a direct download link. If you choose to use a more complicated method (LAMP server), the files being served have to have public read permissions. This means that if a person (or a computer) accesses the link, it automatically downloads the file (your modpack), without having to click on any buttons. If there are any buttons on the screen, and not a direct download, the system will fail. This isn't a limitation of Technique, but how these systems are designed to work.
+1. Upload your modpack to Dropbox. If you use the Dropbox client, you will need to go to your browser anyway, so navigate to your Dropbox dashboard.
+2. Navigate to where you uploaded your modpack.zip and look for the little "chain link" icon. Click on that and it will bring up the share popup.
+3. Make sure visibility is set to "Anyone." Copy the link. It will look like this: https://dl.dropbox.com/s/qwerty1234abcd/modpack.zip?dl=0
+4. The important part here is ?dl=0. This means "do not download". We want to change it to ?dl=1. This means "download this please!". Effectively that will change your link to a direct download link. It will now look like this: 
+5. https://dl.dropbox.com/s/qwerty1234abcd/modpack.zip?dl=1
+6. Write this down somewhere! It's very important!
+Publish Your Pack on Technic
+The last part of this puzzle is to plug everything into Technic. It's also fairly easy. The purpose of publishing your pack on Technic is to give you and your users a special URL to paste into your client that will automatically download your modpack from your hosting service and set it up to work the way it should (given that there aren’t any bugs in the mods or mistakes in setting up the pack). Technique is also capable of modpack versioning so that you can update your pack from one version to the next and keep track of it. For a more advanced system that will allow people to download and use multiple versions of a modpack similar to how BTeam, Hexxit, Tekkit work, you will need to use Technicsolder. That is far more advanced than this tutorial however.
+You will need to have a Technic user account. So if you don't have one, please make one now.
+Follow these guides here to create a modpack on the Technic Platform:
+* How to create a new Platform modpack
+* How to administrate a Platform modpack
+If you are unfamiliar with the Technic launcher, continue below. Otherwise, you are done! You can continue adding more mods to your modpack if you'd like. Try one mod at a time, trial and error. Good luck and have fun!
+Test Your Pack
+One of the most important steps you can take in this whole process is to test your pack and make sure it’s working before making it public or sharing with your friends. If you run into any issues, you will have to do research and use Google or other search engines to find solutions. While we want to encourage people who take the next creative leap in making their own modpack, we cannot spend what can take hundreds of hours to help curate one for each person that may run into issues. That being said, there are things you can keep in mind:
+1. Always test one mod at a time and make sure it works on your Forge client first. If it works on your Forge client before you put it in your pack and download it via Technic, chances are you did something to set up your pack wrong and you know where to look and which mod to check.
+2. Keep notes!! Some things are really simple, but some things are difficult and you might need to remember them. After 1.6.4, you don’t have to worry about Block and Item ID’s anymore. But you do have to worry about biome/enchantment/potion ID’s still. There are only so many slots for these and you could have conflicts if you add mods that use the same numbers. Keep notes of what mods use what ID’s and you can check later when adding new mods to save yourself a major headache. This can be applied to a lot of other things that need to be noted.
+3. Test your pack on your server (or on a local test server) before uploading it to Technic. What happens if your players get forced to play on version 1.0.2 of your modpack but that version doesn’t work on your server? Your server works with 1.0.1. So you have to do a bunch of roll backs and fixes, and then revert your update from Technic.
+4. Have fun and don’t wear yourself out. Making modpacks can be a work of art, or it can just be for the fun of it. But if you don’t watch out, it can also be a lot of work and frustration that you get stuck into with a lot of people expecting more work from you for updates. Remember it’s just for fun!
+How to Test
+1. Download the Technic Launcher.
+2. Navigate to where you downloaded the launcher and double click on it to launch it.
+3. The first thing that pops up is a login form. Log in using your Mojang account and password. If you are concerned, read the Terms of Service and Privacy Policy on the login form.
+4. From here, you can choose one of the platform packs by scrolling the left sidebar on the Modpacks tab and clicking Install/Play when you decide which modpack you want.
+5. If you want to add another pack, you can search using the search bar above the modpacks list or you can paste the platform URL like the one you got above from your modpack into the same search bar. Install it. Then press play to load the modpack!
+Links:
+Github
+About Me
+
+
+Server:
+hub.conspiracycraft.net
